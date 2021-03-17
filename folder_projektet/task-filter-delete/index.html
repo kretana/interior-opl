@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Task Manager</title>
+  </head>
+  
+<body>
+<div class="container-fluid">
+ <div class="row">
+
+    <form class="col s12" id="task-form">
+      <div class="row">
+        <div class="input-field col s12">
+        <div id="main" class="card">
+        <div class="card-panel teal">
+        <span class=" white-text"><b>Task Input</b></span>
+        <!--teksti i shkruar-->
+        <div class="row ">
+        <div class="input-field col s12">
+          <input placeholder="write your task here" id="taskinput" type="text" class="validate">
+          <label for="taskinput"></label>
+         <!--butoni i shtimit-->
+         <button class=" add-task btn teal lighten-2" type="submit" name="action">
+         Add Here</button>
+         </form>
+         </div>
+         </div>
+        
+         <!--Teksti i flitrimit-->
+        <div class="row">
+        <div class="input-field col s12">
+        <span class=" white-text"><b>Task Filter</b></span>
+        <input placeholder="write here to filter" id="taskfilter" type="text" class="validate">
+        <!--lista taskeve-->
+        
+         <ul class="collection">
+         </ul>
+         
+        
+        <!--butoni i fshirjes-->
+        <div class="modal-footer">
+          <button type="delete" id="clearbutton" class="clear-task btn  red lighten-1">Delete All</button> 
+  
+  
+  </div>
+ </div>
+</div>
+</div>
+
+<script
+  src="http://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="app.js"></script>
+
+
+
+
+</body>
+
+
+
+
+</html>

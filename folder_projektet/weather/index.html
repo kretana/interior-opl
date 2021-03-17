@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <title>WeatherApp!</title>
+    <style>
+  #header {
+  background-color: rgba(9, 126, 161, 0.3);
+
+}
+#button-addon2{
+  background-color:rgba(9, 126, 161, 0.3);
+
+
+}
+#footer{
+  background-color:rgba(29, 101, 122, 0.3);
+}
+
+#pjesa2{
+  background-color:rgba(147, 213, 233, 0.3);
+}
+#pjesa3{
+  background-color:rgba(9, 126, 161, 0.3);
+
+}
+
+#imazhi{
+  width:150px;
+  height:150px;
+}
+#imazhi1{
+  width:100px;
+  height:80px;
+}
+#imazhi2{
+  width:100px;
+  height:80px;
+}
+#img1{
+  width:50px;
+  height:40px;
+
+}
+#img2{
+  width:50px;
+  height:50px;
+}
+#img3{
+  width:50px;
+  height:50px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container ">
+    <div class="col-4 fixed-top mx-auto  ">
+            <!--pjesa e pare-->
+        <div class="card border-info" id="card">    
+        <div class="row">
+       
+            <div id="demo" class="carousel slide rounded" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div id="header" class="row">
+                            <div class="col-6">
+                                <div class="rounded">
+                                    <h1 id="temp">  </h1>
+                                </div>
+                                
+                                <div id="header" class="location">
+                                <h5 id="data"> </h5>
+                                <b> <h2 id="loc"> </h2></b>
+                            </div>
+                            </div>
+                            <div class="position-absolute d-grid  justify-content-end align-self-center  ">
+                                <img id="imazhi" src="">
+                            
+                            
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+             </div>
+         </div>
+     </div>
+                 <!--pjesa e dyte-->
+  <div class="row " >
+        <div class="card-group bg-blue accent-1">
+             <div class="card " id="pjesa2">
+             <img id="imazhi1" class="card-img-top" src="" >
+             <div class="card-body">
+            <h5  id="data1"></h5>
+             <h3 class="card-title" id="temp1"></h3>
+             <p class="card-text"><small class="text-muted" id="ora1"></small></p>
+             </div>
+             </div>
+        <div class="card" id="pjesa2">
+            <img id="imazhi2" class="card-img-top" src="" >
+            <div class="card-body">
+            <h5  id="data2"></h5>
+            <h3 class="card-title" id="temp2"></h3>
+            <p class="card-text"><small class="text-muted"id="ora2"></small></p>
+            </div>
+        </div>
+                                        
+         
+        </div>
+  </div>
+  <!--pjesa e trete-->
+  <div class="row  " >
+    
+    <div class="card-group border-info  accent-1">
+         <div class="card" id="pjesa3">
+         <img id="img1" class="card-img-top" src="" >
+         <div class="card-body">
+        <h5  id="data1"></h5>
+         <h3 class="card-title" id="t1"></h3>
+         <p class="card-text"><small class="text-muted" id="dat1"></small></p>
+         </div>
+         </div>
+    <div class="card" id="pjesa3">
+        <img id="img2" class="card-img-top" src="" >
+        <div class="card-body">
+        
+        <h3 class="card-title" id="t2"></h3>
+        <p class="card-text"><small class="text-muted"id="dat2"></small></p>
+        </div>
+    </div>
+    <div class="card" id="pjesa3">
+      <img id="img3" class="card-img-top" src="" >
+      <div class="card-body">
+      
+      <h3 class="card-title" id="t3"></h3>
+      <p class="card-text"><small class="text-muted"id="dat3"></small></p>
+      </div>
+  </div>
+
+                                    
+     
+    </div>
+</div>
+<!-- input  -->
+<div class="input-group mb-3" id="footer">
+  <input type="text" id="button-addon2" class="form-control" placeholder="Shkruaj nje Qytet" aria-label="Qyteti" aria-describedby="button-addon2">
+  <button class="btn btn-outline-secondary"  id="butoni">Shiko Motin</button>
+</div>
+   
+  
+  </div>
+</div>
+ </div>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
