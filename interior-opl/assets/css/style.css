@@ -1,25 +1,11 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Interior
-    Description: Interior - Interior Design and Architecture Bootstrap Template
-    Author: UIdeck
-    Version: 1.0
 
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
 
 -----------------------------------------------------------------------------------*/
 /*===========================
     1. COMMON css 
 ===========================*/
-
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");
 body {
   font-family: 'Hind', sans-serif;
@@ -150,7 +136,6 @@ p {
 
 /*===== All Section Title Style =====*/
 .section-title .sub-title {
-  margin-bottom: 3rem;
   font-size: 18px;
   color: #EB3656;
   text-transform: uppercase; }
@@ -159,8 +144,7 @@ p {
       font-size: 16px; } }
 
 .section-title .title {
-
-  font-size: 30px;
+  font-size: 35px;
   text-transform: uppercase; }
   @media (max-width: 767px) {
     .section-title .title {
@@ -630,7 +614,7 @@ p {
       top: 0; } }
 
 .header-banner {
-  height: 430px;
+  height: 700px;
   position: relative; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-banner {
@@ -655,14 +639,9 @@ p {
         .header-banner .banner-content .sub-title {
           font-size: 18px; } }
     .header-banner .banner-content .banner-title {
-    
-      font-size: 100px;
-      margin-bottom: 7rem;
-      margin-left: 25rem;
-     }
+      font-size: 60px; }
       .header-banner .banner-content .banner-title span {
-        color: #EB3656;
-       }
+        color: #EB3656; }
       @media (max-width: 767px) {
         .header-banner .banner-content .banner-title {
           font-size: 38px; } }
@@ -691,13 +670,9 @@ p {
 /*===========================
     3.ABOUT css 
 ===========================*/
-#about{
-  max-height: 25rem;
-}
-
 @media (max-width: 767px) {
   .about-area {
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 80px; } }
 
 .about-image {
@@ -816,7 +791,49 @@ p {
 /*===========================
       4.SERVICES css 
 ===========================*/
+@media (max-width: 767px) {
+  .services-area {
+    padding-top: 75px;
+    padding-bottom: 80px; } }
 
+.single-services {
+  padding: 50px 30px;
+  background-color: #fff;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-services {
+      padding: 30px 10px; } }
+  @media (max-width: 767px) {
+    .single-services {
+      padding: 30px 10px; } }
+  .single-services .services-icon i {
+    font-size: 52px;
+    color: #EB3656;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+  .single-services .services-content .services-title {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Barlow', sans-serif;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+  .single-services:hover {
+    background-color: #EB3656; }
+    .single-services:hover .services-icon i {
+      color: #fff; }
+    .single-services:hover .services-content .services-title,
+    .single-services:hover .services-content p {
+      color: #fff; }
 
 /*===========================
       5.PROJECT css 
@@ -910,6 +927,85 @@ p {
       width: 35px;
       background-color: #EB3656; }
 
+/*===========================
+        6.TEAM css 
+===========================*/
+@media (max-width: 767px) {
+  .team-area {
+    padding-top: 75px;
+    padding-bottom: 80px; } }
+
+.single-team .team-image img {
+  width: 100%; }
+
+.single-team .team-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 15px;
+  position: relative;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s; }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .single-team .team-content {
+      padding: 30px 0; } }
+  .single-team .team-content .team-name a {
+    font-size: 18px;
+    font-weight: 600;
+    color: #121619;
+    font-family: 'Hind', sans-serif;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    .single-team .team-content .team-name a:hover {
+      color: #EB3656; }
+  .single-team .team-content .sub-title {
+    font-size: 14px;
+    color: #646464; }
+  .single-team .team-content .social {
+    margin-top: -35px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease-out 0s;
+    -moz-transition: all 0.4s ease-out 0s;
+    -ms-transition: all 0.4s ease-out 0s;
+    -o-transition: all 0.4s ease-out 0s;
+    transition: all 0.4s ease-out 0s; }
+    .single-team .team-content .social li {
+      display: inline-block;
+      margin: 0 7px; }
+      .single-team .team-content .social li a {
+        font-size: 16px;
+        color: #646464;
+        width: 30px;
+        height: 30px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #ededed;
+        -webkit-transition: all 0.4s ease-out 0s;
+        -moz-transition: all 0.4s ease-out 0s;
+        -ms-transition: all 0.4s ease-out 0s;
+        -o-transition: all 0.4s ease-out 0s;
+        transition: all 0.4s ease-out 0s; }
+        .single-team .team-content .social li a:hover {
+          background-color: #EB3656;
+          color: #fff; }
+
+.single-team:hover .team-content {
+  background-color: #fff;
+  margin-top: -60px;
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34);
+  -moz-box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34);
+  box-shadow: 0px 6px 16px 0px rgba(235, 54, 86, 0.34); }
+  .single-team:hover .team-content .social {
+    margin-top: 25px;
+    opacity: 1;
+    visibility: visible; }
 
 /*===========================
       7.TESTIMONIAL css 
@@ -1018,10 +1114,6 @@ p {
 /*===========================
        8.CONTACT css 
 ===========================*/
-#contact{
-  max-height: 40rem;
-}
-
 @media (max-width: 767px) {
   .contact-area {
     padding-top: 75px;
@@ -1043,11 +1135,11 @@ p.form-message.error {
   color: #f00; }
 
 .contact-form .single-form {
-  margin-top: 10px; }
+  margin-top: 30px; }
   .contact-form .single-form textarea,
   .contact-form .single-form input {
     width: 100%;
-    height: 40px;
+    height: 60px;
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 0 30px;
@@ -1055,7 +1147,7 @@ p.form-message.error {
     font-family: 'Hind', sans-serif;
     font-size: 16px; }
   .contact-form .single-form textarea {
-    height: 140px;
+    height: 160px;
     padding-top: 20px;
     resize: none; }
   .contact-form .single-form textarea::placeholder,
@@ -1113,8 +1205,6 @@ p.form-message.error {
 /*===========================
        10.FOOTER css 
 ===========================*/
-
-
 @media (max-width: 767px) {
   .footer-widget {
     padding-top: 30px;
@@ -1127,21 +1217,6 @@ p.form-message.error {
   line-height: 26px;
   font-size: 16px; }
 
-  .footer-info{
-    display: flex;
-    flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 34rem;
-  }
-
-  .info-icon{
-    margin-left: 0.5rem;
-  }
-  .single-info{
-    margin-right: 5rem;
-  }
-
 .footer-logo .footer-info li {
   margin-top: 20px; }
   .footer-logo .footer-info li .single-info {
@@ -1152,7 +1227,7 @@ p.form-message.error {
       left: 0; }
       .footer-logo .footer-info li .single-info .info-icon i {
         font-size: 18px;
-         }
+        }
     .footer-logo .footer-info li .single-info .info-content {
       padding-left: 30px; }
 
