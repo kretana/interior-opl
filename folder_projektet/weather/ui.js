@@ -45,7 +45,7 @@ class Ui{
             
             this.data.textContent="Today,";
             var iconcode =weather.list[0].weather[0].icon;
-            var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+            var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
             this.imazhi.setAttribute('src', iconurl);
             const options={
                 month:"short",
@@ -60,14 +60,14 @@ class Ui{
             const data1=new Date(weather.list[1].dt_txt).toLocaleDateString("en-US",options);
             this.data1.textContent=`${data1}`;
             var iconcode1=weather.list[1].weather[0].icon;
-            var iconurl1 = "http://openweathermap.org/img/w/" + iconcode1 + ".png";
+            var iconurl1 = "https://openweathermap.org/img/w/" + iconcode1 + ".png";
             this.imazhi1.setAttribute('src', iconurl1);
             //pjesa 2.2
             this.temp2.textContent=`${weather.list[2].main.temp}° `;
             const data2=new Date(weather.list[2].dt_txt).toLocaleDateString("en-US",options);
             this.data2.textContent=`${data2}`;
             var iconcode2=weather.list[2].weather[0].icon;
-            var iconurl2 = "http://openweathermap.org/img/w/" + iconcode2 + ".png";
+            var iconurl2 = "https://openweathermap.org/img/w/" + iconcode2 + ".png";
             this.imazhi2.setAttribute('src', iconurl2);
             //pjesa 3.1
             this.t1.textContent=`${weather.list[10].main.temp}° `;
@@ -79,21 +79,21 @@ class Ui{
             const dat1=new Date(weather.list[10].dt_txt).toLocaleDateString("en-US",options2);
             this.dat1.textContent=`${dat1}`;
             var iconcode3=weather.list[10].weather[0].icon;
-            var iconurl3 = "http://openweathermap.org/img/w/" + iconcode3 + ".png";
+            var iconurl3 = "https://openweathermap.org/img/w/" + iconcode3 + ".png";
             this.img1.setAttribute('src', iconurl3);
             //pjesa 3.2
             this.t2.textContent=`${weather.list[18].main.temp}° `;
             const dat2=new Date(weather.list[18].dt_txt).toLocaleDateString("en-US",options2);
             this.dat2.textContent=`${dat2}`;
             var iconcode4=weather.list[18].weather[0].icon;
-            var iconurl4 = "http://openweathermap.org/img/w/" + iconcode4 + ".png";
+            var iconurl4 = "https://openweathermap.org/img/w/" + iconcode4 + ".png";
             this.img2.setAttribute('src', iconurl4);
             //pjesa 3.3
             this.t3.textContent=`${weather.list[26].main.temp}° `;
             const dat3=new Date(weather.list[26].dt_txt).toLocaleDateString("en-US",options2);
             this.dat3.textContent=`${dat3}`;
             var iconcode5=weather.list[26].weather[0].icon;
-            var iconurl5 = "http://openweathermap.org/img/w/" + iconcode5 + ".png";
+            var iconurl5 = "https://openweathermap.org/img/w/" + iconcode5 + ".png";
             this.img3.setAttribute('src', iconurl5);    
     
         }
