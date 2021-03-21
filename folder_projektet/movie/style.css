@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+.row{
+  display: flex;
+}
+
 body {
   background-color: #242333;
   display: flex;
