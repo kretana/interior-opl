@@ -634,10 +634,10 @@ p {
   position: relative; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .header-banner {
-      height: 500px; } }
+      height: 50vh; } }
   @media (max-width: 767px) {
     .header-banner {
-      height: 500px; } }
+      height: 50vh; } }
   .header-banner .banner-image {
     position: absolute;
     top: 0;
@@ -655,10 +655,9 @@ p {
         .header-banner .banner-content .sub-title {
           font-size: 18px; } }
     .header-banner .banner-content .banner-title {
-    
+      text-align: center;
       font-size: 100px;
-      margin-bottom: 7rem;
-      margin-left: 25rem;
+      
      }
       .header-banner .banner-content .banner-title span {
         color: #EB3656;
@@ -691,9 +690,7 @@ p {
 /*===========================
     3.ABOUT css 
 ===========================*/
-#about{
-  max-height: 25rem;
-}
+
 
 @media (max-width: 767px) {
   .about-area {
@@ -1123,6 +1120,13 @@ p.form-message.error {
 .footer-logo a img {
   width: 140px; }
 
+
+.footInfoo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} 
 .footer-logo p {
   line-height: 26px;
   font-size: 16px; }
@@ -1130,9 +1134,8 @@ p.form-message.error {
   .footer-info{
     display: flex;
     flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: 34rem;
+    justify-content: center;
+    align-items: center;
   }
 
   .info-icon{
@@ -1249,6 +1252,7 @@ p.form-message.error {
   padding: 13px 0; }
 
 .back-to-top {
+  margin-right:50px ;
   position: fixed;
   bottom: 20px;
   right: 20px;
